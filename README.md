@@ -4,7 +4,7 @@ A website for my freelance editing and tutoring business.
 
 ## Wireframes
 
-![Wireframe of Landing Page](wireframes%5Clanding-pg-wireframe.jpg)
+![Wireframe of Landing Page](wireframes/landing-pg-wireframe.jpg)
 
 Header- Will contain logo, business name, and navagation menu
 
@@ -14,7 +14,7 @@ Main Content- below header and nav bar will be scrolling testimonials/reviews. B
 
 Footer- will contain copyright info and clickable social media icons
 
-![Wireframe of About Page](wireframes%5Cabout-pg-wireframe.jpg)
+![Wireframe of About Page](wireframes/about-pg-wireframe.jpg)
 
 Header- Will contain logo, business name, and navagation menu
 
@@ -24,7 +24,7 @@ Main Content- Will include about me info under header; to include certifications
 
 Footer- will contain copyright info and clickable social media icons
 
-![Wireframe of Service Page](wireframes%5Cservice-pg-wireframe.jpg)
+![Wireframe of Service Page](wireframes/service-pg-wireframe.jpg)
 
 Header- Will contain logo, business name, and navagation menu
 
@@ -34,7 +34,7 @@ Main Content- Below header will be a short text description of the service offer
 
 Footer- will contain copyright info and clickable social media icons
 
-![WIreframe of Contact Page](wireframes%5Ccontact-pg-wireframe.jpg)
+![WIreframe of Contact Page](wireframes/contact-pg-wireframe.jpg)
 
 Header- Will contain logo, business name, and navagation menu
 
