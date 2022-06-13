@@ -4,42 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moore Student Success Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
     <nav>
-        <img src="images/mss-logo.jpg" alt="moore student success logo">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <div class="center">
+            <a href="index.html"> <img src="images/mss-logo.jpg" alt="moore student success logo"></a>
+        </div>
+        <div class="main-menu">
+            <ul>
+                <li><a href="contact.html">Contact</a></li>
+                
+                <li class="dropdown">
+                    <button class="dropbtn">Services</button>
+                    <i class="fa fa-caret-down"></i>
+           
+                    <div class="dropdown-content">
+                            <a href="editing.html">Editing</a>
+                            <a href="proofreading.html">Proofreading</a>
+                            <a href="formatting.html">Manuscript Formatting</a>
+                            <a href="tutoring.html">Tutoring</a>
+                            <a href="curriculum.html">Curriculum Development</a>
+                            <a href="research.html">Research Assistance</a>
+                    </div></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </div>
     </nav>
 </header>    
 <main>
-    <div>
+    <div class="services">
         <h1>Cirruculum Development and Planning</h1>
-        <p>Description of service</p>
+        <p>Description of service:Description of service: Lorem ipsum dolor sit amet, consectetur 
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+            commodo consequat. Duis aute irure dolor 
+            in reprehenderit in voluptate velit esse cillum dolore 
+            eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+            sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+                culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+                culpa qui officia deserunt mollit anim id est laborum.
+            </p>
     </div>
-    <div>
-        <p>Sample if applicable</p>
+    <div class="services">
+        <p1>Curriculum Development Sample</p1>
     </div>
-    <div>
+    <div class="services">
         <a href="contact.html">Contact us for a free quote!</a>
     </div>
 </main>
 <footer>
-    <div>
-        <h2>Copyright</h2>
-        <p>2022</p>
-    </div>
-    <div>
-        <h2>Contact Us</h2>
-        <p>moorestudentsuccess@gmail.com</p>
-    </div>
-    <div>
-        <h2>Follow Us</h2>
+    <div class="footer">
+        <ul>
+            <li><h2>Copyright 2022</h2></li>
+            <li><h2><a href="contact.html">Contact Us</a></h2></li>
+           
+        </ul>
     </div>
 </footer>
 </body>
