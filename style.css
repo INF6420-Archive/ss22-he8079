@@ -75,6 +75,7 @@ padding: 0 15px;
 
 .logo {
     padding: 0;
+    margin-left: 5%;
 }
 .menu, .submenu {
 list-style-type: none;
@@ -107,7 +108,7 @@ color: rgb(31, 129, 64);
 
 .toggle {
     order: 1;
-    font-size: 20px;
+    font-size: large;
    
 }
 
@@ -116,6 +117,9 @@ color: rgb(31, 129, 64);
     width: 100%;
     text-align: center;
     display: none;
+    font-size: x-large;
+    color: #5d17ea;
+    
 }
 
 .active .item {
@@ -132,7 +136,7 @@ color: rgb(31, 129, 64);
 
 .has-submenu > a::after {
     font-family: "Font Awesome 6 Free";
-    font-size: 12px;
+    font-size: xx-large;
     line-height: 16px;
     font-weight: 900;
     content: \f078;
@@ -142,12 +146,87 @@ color: rgb(31, 129, 64);
 
 .subitem a {
     padding: 10px 15px;
-
+    background-color: rgb(204, 203, 203);
+    font-weight: 450;
 }
 
 .submenu-active {
-    background-color: gold;
+    background-color: rgb(204, 203, 203);
     border-radius: 3px;
+}
+
+.slideshow-container {
+position: relative;
+background: #f5fff7;
+margin-top: 5%;
+margin-left: 7%;
+margin-right: 7%;
+}
+
+.mySlides {
+    display: none;
+    padding: 60px;
+    text-align: center;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #5d17ea;
+    font-weight: bold;
+    font-size: 40px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgb(125, 93, 243);
+    color: rgb(15, 15, 15);
+}
+
+.dot-containers {
+    text-align: center;
+    padding: 20px;
+    background: #5d17ea;
+    margin-left: 7%;
+    margin-right: 7%;
+  
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin:  0 2px;
+    background-color: rgb(220, 161, 250);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #b2b4b2;
+    
+}
+
+q {
+    font-style: italic;
+    font-size: xx-large;
+}
+
+.stars {
+    color: gold;
+    font-size: xxx-large;
 }
 
 .box-a {
@@ -338,7 +417,7 @@ footer {
 }
 .footer li {
     display: block;
-    width: 700px;
+    width: 500px;
     min-width: auto;
     float: right;
     margin-left: auto;

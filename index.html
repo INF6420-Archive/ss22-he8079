@@ -13,10 +13,6 @@
 <header>
     <nav>
         <div>
-            
-       
-
-
 <ul class="menu">
     <li class="logo"><a href="index.html"> <img src="images/mss-logo.jpg" alt="moore student success logo"></a></li>
     <li class="item"><a href="index.html">Home</a></li>
@@ -37,15 +33,47 @@
     <li class="toggle"><i class="fa-solid fa-bars"></i></li>
 </ul>
 </div>
-
- 
     </nav>
 </header>    
 <main>
-    <div class="box-a"> 
-        <h1>Testimonials</h1>
-        <p>Testimonial from a client: Likely slide show??</p>
+   <div class="slideshow-container">
+
+    <div class="mySlides">
+        <q>First testimonial about services received.</q>
+        <p class="stars"><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i></p>
     </div>
+
+    <div class="mySlides">
+        <q>Second testimonial about services received.</q>
+        <p class="stars"><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i></p>
+    </div>
+
+    <div class="mySlides">
+        <q>Third testimonial about services received.</q>
+        <p class="stars"><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i></p>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)"><i class="fa-solid fa-angle-left"></i></a>
+    <a class="next" onclick="plusSlides(1)"><i class="fa-solid fa-angle-right"></i></a>
+    
+   </div>
+   <div class="dot-containers">
+        <span class="dot" onclick="currentslide(1)"></span>
+        <span class="dot" onclick="currentslide(2)"></span>
+        <span class="dot" onclick="currentslide(3)"></span>
+   </div>
+   
     <div class="estimate">
         <p>*Always free estimates on services*</p>
     </div>
@@ -84,95 +112,3 @@
 
 </html>
 
-.main-menu ul {
-    display: flex;
-}
-.main-menu li {
-    display: block;
-    width: 350px;
-   float: right;
-    margin-left: 2px;
-    border: 1px solid rgb(80, 20, 220);
-}
-
-.main-menu a {
-    display: block;
-    padding: 3px;
-    text-decoration: none;
-    background-color: #5d17ea;
-    color: #f5fff7;
-}
-
-.main-menu a:hover {
-    background-color: rgb(56, 56, 56);
-    color: white;
-}
-.center {
-    margin: auto;
-    width: 30%;
-    padding: 10px;
-}
-
-.dropbtn {
-    background-color: #5d17ea;
-    color: white;
-    width: 349px;
-    padding: 3px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    text-align: left;
-    font-style: inherit;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdow .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: rgb(98, 98, 236);
-    font-family: inherit;
-    margin: 0;
-}
-
-.mainmenu a:hover, .dropdown:hover .dropbtn {
-    background-color: rgb(56, 56, 56);
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: blueviolet;
-    min-width: 349px;
-    box-shadow:  0px 8px 16px 0px rgba (0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a { 
-    float: none;
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content a:hover {
-    background-color: rgb(56, 56, 56);
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown:hover .dropbtn {
-    background-color: rgb(56, 56, 56);
-}
