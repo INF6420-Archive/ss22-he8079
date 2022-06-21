@@ -31,7 +31,7 @@ h2 {
 }
 
 a {
-    color: blue;
+    color: #5d17ea;
     text-decoration: none;
 }
 
@@ -230,6 +230,7 @@ q {
     font-size: xxx-large;
 }
 
+
 .box-a {
     display: block;
     background-color: #12f13e;
@@ -254,6 +255,52 @@ q {
     margin-bottom: auto;
 }
 
+.main {
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+    text-align: center;
+  }
+  
+  .row {
+    margin: 8px -16px;
+  }
+  
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  .column {
+    float: left;
+    width: 33%;
+  }
+  
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+  .content {
+    background-color: #f5fff7;
+    padding: 10px;
+  }
+  .content img {
+   height: 30%;
+   width: 30%;
+   
+  }
+
+  
 .indextable {
     width: 90%;
     border-collapse: collapse;
@@ -278,6 +325,34 @@ q {
     color: #5d17ea;
 }
 
+.aboutrow {
+    margin: 8px -16px;
+    text-align: center;
+  }
+  
+  .aboutrow,
+  .aboutrow > .aboutcolumn {
+    padding: 10px;
+  }
+  
+  .aboutcolumn {
+    float: left;
+    width: 33%;
+  }
+  
+  
+  .aboutrow:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+  .aboutcontent {
+    background-color: #f5fff7;
+    padding: 15px;
+  }
+
 .student {
    display: block;
    margin-left: auto;
@@ -298,6 +373,8 @@ q {
     margin-left: auto;
     margin-right: auto;
     width: 25%;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 .aboutme {
@@ -315,6 +392,9 @@ width: 50%;
     font-size: x-large;
     text-indent: 50px;  
 }
+
+
+
 
 .sample {
     margin: 5%;
@@ -388,6 +468,8 @@ margin-bottom: 5%;
     color: white;
 }
 
+
+
 .contact {
     text-align: center;
 }
@@ -413,20 +495,23 @@ footer {
     padding: 10px;
     margin-bottom: 0%;
 }
-.footer ul {
-    display: inline-block;
+.footer-column {
+    float: left;
+    width: 50%;
 }
-.footer li {
-    display: block;
-    width: 500px;
-    min-width: auto;
-    float: right;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #f5fff7;
-    color: black;
-    padding: 10px;
-}
+
+@media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
 
 @media all and (min-width: 600px) {
     .menu {
