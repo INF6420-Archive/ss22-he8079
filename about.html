@@ -4,48 +4,137 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moore Student Success Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4e37bbbb15.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    
+    <article>
 <header>
     <nav>
-        <img src="images/mss-logo.jpg" alt="moore student success logo">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
+        <div>
+<ul class="menu">
+    <li class="logo"><a href="index.html"> <img src="images/mss-logo.jpg" alt="moore student success logo"></a></li>
+    <li class="item"><a href="index.html">Home</a></li>
+    <li class="item"><a href="about.html">About</a></li>
+   <li class="item has-submenu">
+    <a tabindex="0">Services <i class="fa-solid fa-angle-down"></i></a>
+        <ul class="submenu">
+            <li class="subitem"><a href="editing.html">Editing</a></li>
+            <li class="subitem"><a href="proofreading.html">Proofreading</a></li>
+            <li class="subitem"><a href="formatting.html">Manuscript Formatting</a></li>
+            <li class="subitem"><a href="tutoring.html">Tutoring</a></li>
+            <li class="subitem"><a href="curriculum.html">Curriculum Development</a></li>
+            <li class="subitem"><a href="research.html">Research Assistance</a></li>
+            
         </ul>
+    </li>
+    <li class="item"><a href="contact.html">Contact</a></li> 
+    <li class="toggle"><i class="fa-solid fa-bars"></i></li>
+</ul>
+</div>
     </nav>
 </header>    
 <main>
-   <div>
+   <div class="aboutme">
     <h1>About Me</h1>
-    <p>I am Melissa moore and I jfshjvashjaviuawgrhu fahwnuy afhhasfjvxm</p>
+    <p>I am Melissa moore and I Description of service: Lorem ipsum dolor sit amet, consectetur 
+        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+        commodo consequat. Duis aute irure dolor 
+        in reprehenderit in voluptate velit esse cillum dolore 
+        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+        sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </div>
-<div>
-    <h2>Sample Work</h2>
-   <ul>
-    <li>Writing Sample</li>
-    <li>Editing Sample</li>
-    <li>Curriculum Development Sample</li>
-</ul>
+<div class="main">
+    <h1> Sample Work</h1>
+    <hr>
+    <div class="aboutrow">
+        <div class="aboutcolumn">
+            <div class="aboutcontent">
+                <h3> Editing </h3>
+            </div>
+        </div>
+     
+        <div class="aboutcolumn">
+             <div class="aboutcontent">
+                 <h3> Writing</h3>
+             </div>
+            </div>
+    
+         <div class="aboutcolumn">
+             <div class="aboutcontent">
+                <h3> Curriculum Development</h3>
+             </div>
+         </div>    
+    </div> 
 </div>
-<div>
+<div class="slideshow-container">
+    <div class="mySlides fade">
+        <img src="images/backgarden.jpg" alt="green plants" style="width:50%">
+      </div>
+      <div class="mySlides fade">
+        <img src="images/chickens.jpg" alt="one tan chicken and one black chicken" style="width:50%">
+      </div>
+      <div class="mySlides fade">
+        <img src="images/hamilton.jpg" alt="Melissa and Jordan looking at camera with a Hamilton program held up between them" style="width:50%">
+      </div>
+      <div class="mySlides fade">
+        <img src="images/jordangrad.jpg" alt="Melissa and Jordan wearing a graduation cap and gown. They are standing next to eachother in front of a tree" style="width:50%">
+      </div>
+      <div class="mySlides fade">
+        <img src="images/melanvi.jpg" alt="Melissa hugging black dog" style="width:50%">
+      </div>
+      <div class="mySlides fade">
+        <img src="images/MMoore.jpg" alt="Melissa holding program standing in front of podium at conference" style="width:50%">
+      </div>
+      <div class="mySlides fade">
+        <img src="images/phewalk.jpg" alt="Two small white and black dogs walking on leash. One dog is looking at camera and barking." style="width:50%">
+      </div>
+      <div class="mySlides fade">
+        <img src="images/phoenix.jpg" alt="Black and white image of small fluffy dog looking at camera" style="width:50%">
+      </div>
+      <div class="mySlides fade">
+        <img src="images/running.jpg" alt="Melissa running through a park" style="width:50%">
+      </div>
+      <div class="mySlides fade">
+        <img src="images/spn.jpg" alt="Melissa and Jordan standing in front of Baby from Supernatural. Melissa is holding the demon blade and Jordan is holding the angel blade." style="width:50%">
+      </div>
+     
+
+
+
+
+<a class="prev" onclick="plusSlides(-1)"><i class="fa-solid fa-angle-left"></i></a>
+<a class="next" onclick="plusSlides(1)"><i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+
+<div class="about">
     <img src="images/photo-of-me.jpg" alt="image of Melissa Moore">
 </div>
+
 </main>
-<footer>
-    <div>
-        <h2>Copyright</h2>
-        <p>2022</p>
-    </div>
-    <div>
-        <h2>Contact Us</h2>
-        <p>moorestudentsuccess@gmail.com</p>
-    </div>
-    <div>
-        <h2>Follow Us</h2>
-    </div>
+
+
+<footer class="footer">
+    <div class="footer-column"> 
+       <h2>&copy; Copyright 2022</h2>
+   </div>
+   <div class="footer-column">
+       <h2><a href="contact.html">Contact Us</a></h2>
+   </div>
+       
+       
+   
 </footer>
+</article>
+<script src="script.js"></script>
 </body>
 </html>
