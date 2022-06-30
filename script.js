@@ -70,3 +70,34 @@ function showSlides(n) {
 
 
 
+
+
+
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+function validateForm() {
+  var x = document.forms["myForm"]["lname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+function validateForm() {
+  var x = document.forms["myForm"]["subject"].value;
+  if (x == "") {
+    alert("Subject must be filled out");
+    return false;
+  }
+}
+function validateForm() {
+  var x = document.forms["myForm"]["email"].value;
+  if (x == "") {
+    alert("Email must be filled out");
+    return false;
+  }
+}

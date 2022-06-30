@@ -5,7 +5,7 @@
 }
 
 body {
-    background: #b7fcc5;
+    background: #dbfde2;
     color: black; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 100%;
@@ -159,7 +159,7 @@ color: rgb(31, 129, 64);
 .slideshow-container {
 position: relative;
 background: #f5fff7;
-margin-top: 5%;
+margin-top: 2%;
 margin-left: 7%;
 margin-right: 7%;
 }
@@ -251,14 +251,14 @@ q {
     font-size: xx-large;
     font-family: inherit;
     padding: 40px;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: 2%;
+    margin-bottom: 1%;
 }
 
 .main {
     max-width: 1000px;
     margin: auto;
-    margin-top: 10%;
+    margin-top: 5%;
     margin-bottom: 10%;
   }
   
@@ -468,6 +468,63 @@ margin-bottom: 5%;
     color: white;
 }
 
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #5d17ea;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    text-transform: uppercase;
+  }
+  [type="submit"]:hover {
+background-color: rgb(56, 56, 56);
+  }
+
+  .container {
+    border-radius: 5px;
+    background-color: #f5fff7;
+    padding: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 2%;
+    margin-bottom: 10%;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 15%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
 
 
 .contact {
@@ -560,4 +617,9 @@ footer {
         border-radius: 0;
     }
 
-
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
