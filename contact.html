@@ -40,43 +40,20 @@
         <p>For a free estimate on services or to learn more, please fill out the form below.</p>
     </div>
     <div class="container">
-        <form name="myForm" action="https://formspree.io/f/mqknovlo" onsubmit="return validateForm()" method="post" required>
-          <div class="row">
-            <div class="col-25">
-              <label for="fname">First Name</label>
-            </div>
-            <div class="col-75">
-              <input type="text" id="fname" name="firstname" placeholder="Your name..">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="lname">Last Name</label>
-            </div>
-            <div class="col-75">
-              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="email">Email</label>
-            </div>
-            <div class="col-75">
-              <input type="text" id="email" name="email" placeholder="Your email address..">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="subject">Message</label>
-            </div>
-            <div class="col-75">
-              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-            </div>
-          </div>
-          <div class="row">
-            <input type="submit" value="Submit">
-          </div>
+        <form name="myForm" action="https://formspree.io/f/mqknovlo" method="post" class="validate" >
+          <label for="name">Your Name</label>
+          <input name="name" id="name" type="text" class="form-input">
+          
+          <label for="email">Your Email</label>
+          <input name="email" id="email" type="email" class="form-input" required>
+          
+          <label for="message">Your Message</label>
+          <textarea name="message"  class="form-input" required></textarea>
+        
+          <button type="submit">Submit</button>
         </form>
+        
+        
       </div>
 </main>
 <footer class="footer">
