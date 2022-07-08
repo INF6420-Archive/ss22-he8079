@@ -231,11 +231,7 @@ q {
     font-size: xxx-large;
 }
 
-.mySlides2 {
-  display: inline-block;
 
- 
-}
 
 .show2 {
     max-width: 100%;
@@ -266,6 +262,7 @@ q {
     padding: 40px;
     margin-top: 2%;
     margin-bottom: 1%;
+   
 }
 
 .main {
