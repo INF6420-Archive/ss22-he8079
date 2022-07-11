@@ -1,26 +1,26 @@
 const toggle = document.querySelector(".toggle");
 const menu = document.querySelector(".menu");
- 
+
 
 function toggleMenu() {
     if (menu.classList.contains("active")) {
         menu.classList.remove("active");
-         
+
         // adds the menu (hamburger) icon
         toggle.querySelector("a").innerHTML = "<i class=’fas fa-bars’></i>";
     } else {
         menu.classList.add("active");
-         
+
         // adds the close (x) icon
         toggle.querySelector("a").innerHTML = "<i class=’fas fa-times’></i>";
     }
 }
- 
+
 
 toggle.addEventListener("click", toggleMenu, false);
 
 const items = document.querySelectorAll(".item");
- 
+
 
 function toggleItem() {
   if (this.classList.contains("submenu-active")) {
@@ -32,33 +32,45 @@ function toggleItem() {
     this.classList.add("submenu-active");
   }
 }
- 
+
 
 for (let item of items) {
     if (item.querySelector(".submenu")) {
       item.addEventListener("click", toggleItem, false);
       item.addEventListener("keypress", toggleItem, false);
-    }   
+    }
 }
 
-let slideIndex = 0;
-showSlides();
+var slideIndex = 1;
+showSlides(slideIndex);
 
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides1");
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
+
+function currentSlide(n) {
+  showSlides((slideIndex = n));
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides1");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 20000); //change image every 20 seconds
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
 }
-
-
-
-
 
 // Add the novalidate attribute when the JS loads
 var forms = document.querySelectorAll('.validate');
@@ -110,7 +122,7 @@ var hasError = function (field) {
 
     // If a number field is below the min
     if (validity.rangeUnderflow) return 'Please select a value that is no less than ' + field.getAttribute('min') + '.';
-  
+
       // If pattern doesn't match
     if (validity.patternMismatch) {
 
@@ -133,7 +145,7 @@ var showError = function (field, error) {
 
     // Add error class to field
     field.classList.add('error');
-  
+
     // If the field is a radio button and part of a group, error all and get the last item in the group
     if (field.type === 'radio' && field.name) {
         var group = document.getElementsByName(field.name);
@@ -158,7 +170,7 @@ var showError = function (field, error) {
         message = document.createElement('div');
         message.className = 'error-message';
         message.id = 'error-for-' + id;
-        
+
         // If the field is a radio button or checkbox, insert error after the label
         var label;
         if (field.type === 'radio' || field.type ==='checkbox') {
@@ -174,7 +186,7 @@ var showError = function (field, error) {
         }
 
     }
-    
+
     // Add ARIA role to the field
     field.setAttribute('aria-describedby', 'error-for-' + id);
 
@@ -193,7 +205,7 @@ var removeError = function (field) {
 
     // Remove error class to field
     field.classList.remove('error');
-    
+
     // Remove ARIA role from the field
     field.removeAttribute('aria-describedby');
 
@@ -213,7 +225,7 @@ var removeError = function (field) {
     // Get field id or name
     var id = field.id || field.name;
     if (!id) return;
-    
+
 
     // Check if an error message is in the DOM
     var message = field.form.querySelector('.error-message#error-for-' + id + '');
@@ -235,7 +247,7 @@ document.addEventListener('blur', function (event) {
 
     // Validate the field
     var error = hasError(event.target);
-  
+
     // If there's an error, show it
     if (error) {
         showError(event.target, error);
@@ -280,6 +292,6 @@ document.addEventListener('submit', function (event) {
     // You could also bolt in an Ajax form submit process here
 
 }, false);
-  
+
 
 
