@@ -76,6 +76,8 @@ padding: 0 15px;
 .logo {
     padding: 0;
     margin-left: 5%;
+    width: 100%;
+    height: 100%;
 }
 .menu, .submenu {
 list-style-type: none;
@@ -535,11 +537,32 @@ background-color: rgb(56, 56, 56);
     box-sizing: border-box;
   }
 
+.message-input {
+    border: 2px solid #ccc;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 1em;
+    margin-bottom: 1.5em;
+    width: 100%;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    text-align: left;
+
+
+    
+}
+
   .form-input:focus {
     outline: none;
     border: 2px solid #5d17ea;
   }
 
+  .message-input:focus {
+    outline: none;
+    border: 2px solid #5d17ea;
+
+  }
   textarea {
     height: 150px;
     resize: vertical;
