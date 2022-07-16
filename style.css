@@ -5,8 +5,8 @@
 }
 
 body {
-    background: #b7fcc5;
-    color: black; 
+    background: #dbfde2;
+    color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 100%;
     width: 100%;
@@ -36,7 +36,7 @@ a {
 }
 
 img {
-    max-width: 100%; 
+    max-width: 100%;
 }
 
 address {
@@ -76,6 +76,8 @@ padding: 0 15px;
 .logo {
     padding: 0;
     margin-left: 5%;
+    width: 100%;
+    height: 100%;
 }
 .menu, .submenu {
 list-style-type: none;
@@ -110,7 +112,7 @@ color: rgb(31, 129, 64);
 .toggle {
     order: 1;
     font-size: large;
-   
+
 }
 
 .item {
@@ -120,7 +122,7 @@ color: rgb(31, 129, 64);
     display: none;
     font-size: x-large;
     color: #5d17ea;
-    
+
 }
 
 .active .item {
@@ -159,12 +161,13 @@ color: rgb(31, 129, 64);
 .slideshow-container {
 position: relative;
 background: #f5fff7;
-margin-top: 5%;
+margin-top: 2%;
 margin-left: 7%;
 margin-right: 7%;
+
 }
 
-.mySlides {
+.mySlides1 {
     display: none;
     padding: 60px;
     text-align: center;
@@ -201,7 +204,7 @@ margin-right: 7%;
     background: #5d17ea;
     margin-left: 7%;
     margin-right: 7%;
-  
+
 }
 
 .dot {
@@ -217,7 +220,7 @@ margin-right: 7%;
 
 .active, .dot:hover {
     background-color: #b2b4b2;
-    
+
 }
 
 q {
@@ -230,6 +233,12 @@ q {
     font-size: xxx-large;
 }
 
+
+
+.show2 {
+    max-width: 100%;
+    max-height: 400px;
+}
 
 .box-a {
     display: block;
@@ -251,44 +260,44 @@ q {
     font-size: xx-large;
     font-family: inherit;
     padding: 40px;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: 2%;
+    margin-bottom: 1%;
+
 }
 
 .main {
     max-width: 1000px;
     margin: auto;
-    margin-top: 10%;
+    margin-top: 5%;
     margin-bottom: 10%;
   }
-  
+
   h1 {
     font-size: 50px;
-    word-break: break-all;
     text-align: center;
   }
-  
+
   .row {
     margin: 8px -16px;
   }
-  
+
   .row,
   .row > .column {
     padding: 8px;
   }
-  
+
   .column {
     float: left;
     width: 33%;
   }
-  
-  
+
+
   .row:after {
     content: "";
     display: table;
     clear: both;
   }
-  
+
 
   .content {
     background-color: #f5fff7;
@@ -297,10 +306,10 @@ q {
   .content img {
    height: 30%;
    width: 30%;
-   
+
   }
 
-  
+
 .indextable {
     width: 90%;
     border-collapse: collapse;
@@ -308,7 +317,7 @@ q {
     text-decoration: none;
     margin: 5%;
     padding: 5%;
-    
+
 }
 
 .indextable td {
@@ -329,24 +338,24 @@ q {
     margin: 8px -16px;
     text-align: center;
   }
-  
+
   .aboutrow,
   .aboutrow > .aboutcolumn {
     padding: 10px;
   }
-  
+
   .aboutcolumn {
     float: left;
     width: 33%;
   }
-  
-  
+
+
   .aboutrow:after {
     content: "";
     display: table;
     clear: both;
   }
-  
+
 
   .aboutcontent {
     background-color: #f5fff7;
@@ -372,9 +381,9 @@ q {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 25%;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    width: 35%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .aboutme {
@@ -390,7 +399,7 @@ width: 50%;
 
 .aboutme p {
     font-size: x-large;
-    text-indent: 50px;  
+    text-indent: 50px;
 }
 
 
@@ -461,12 +470,131 @@ margin-bottom: 5%;
     text-decoration: none;
     padding: 5px;
     border: 1px solid black;
-    
+
 }
 .services a:hover {
     background-color: rgb(56, 56, 56);
     color: white;
 }
+
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+
+  input[type=submit] {
+    background-color: #5d17ea;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    text-transform: uppercase;
+  }
+  [type="submit"]:hover {
+background-color: rgb(56, 56, 56);
+  }
+
+  container {
+    border-radius: 5px;
+    background-color: #f5fff7;
+    padding: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 2%;
+    margin-bottom: 10%;
+  }
+
+  form {
+    width: 50%;
+    margin: 3em auto;
+  }
+
+  label {
+    display: block;
+    font-weight: 700;
+  }
+
+  .form-input {
+    border: 2px solid #ccc;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 1em;
+    margin-bottom: 1.5em;
+    width: 100%;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+.message-input {
+    border: 2px solid #ccc;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 1em;
+    margin-bottom: 1.5em;
+    width: 100%;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    text-align: left;
+
+
+    
+}
+
+  .form-input:focus {
+    outline: none;
+    border: 2px solid #5d17ea;
+  }
+
+  .message-input:focus {
+    outline: none;
+    border: 2px solid #5d17ea;
+
+  }
+  textarea {
+    height: 150px;
+    resize: vertical;
+  }
+
+  [type="submit"] {
+    width: 100%;
+    background: #5d17ea;
+    color: #fff;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: .5em;
+  }
+
+  [type="submit"]:hover {
+    background: rgb(56, 56, 56);
+  }
+
+  .error {
+    border-color: #C62828;
+  }
+
+  .error-message {
+    margin-top: -1em;
+    margin-bottom: 1em;
+    color: #C62828;
+  }
 
 
 
@@ -491,7 +619,7 @@ footer {
     top: 100%;
     text-align: center;
     font-size: 10px;
-    background-color: #f5fff7; 
+    background-color: #f5fff7;
     padding: 10px;
     margin-bottom: 0%;
 }
@@ -505,8 +633,8 @@ footer {
       width: 50%;
     }
   }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+
   @media screen and (max-width: 600px) {
     .column {
       width: 100%;
@@ -521,7 +649,7 @@ footer {
     .toggle {
         flex: 1;
         text-align: right;
-        order: 1; 
+        order: 1;
     }
     .logo {
         flex: 1;
@@ -530,7 +658,7 @@ footer {
 
 @media all and (min-width: 960px) {
     .menu {
-        align-items: flex-start;     
+        align-items: flex-start;
         flex-wrap: nowrap;
         background: none;
     }
@@ -542,10 +670,10 @@ footer {
     .item {
         order: 1;
         position: relative;
-        display: block; 
+        display: block;
         width: auto;
     }
-   
+
     .submenu-active .submenu {
         display: block;
         position: absolute;
@@ -560,4 +688,9 @@ footer {
         border-radius: 0;
     }
 
-
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
